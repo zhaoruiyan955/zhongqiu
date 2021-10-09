@@ -1,0 +1,13 @@
+/* pages/game/rules.wxss */
+.rule-view{
+  position: relative;
+  width: 100%;
+}
+.rule-view view{
+  position: absolute;
+  top: 0;
+  left: 50%;
+  transform: translate(-50%);
+  width: 441rpx;
+  height: 111rpx;
+}

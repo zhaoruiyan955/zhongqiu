@@ -1,0 +1,7 @@
+<!--pages/game/index.wxml-->
+<view>
+  <view class="bg">
+  <image mode="widthFix" src="../../images/bbsh.png"></image>
+  <view class="bg-link" bindtap="index_link"></view>
+  </view>
+</view>

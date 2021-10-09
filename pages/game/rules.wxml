@@ -1,0 +1,9 @@
+<view class='container'>
+  <image src='../../images/rule1.jpg' mode="widthFix" class='lr-img'></image>
+  <image src='../../images/rule2.jpg' mode="widthFix" class='lr-img'></image>
+  <view class="rule-view">
+    <image src='../../images/rule3.jpg' mode="widthFix" class='lr-img'></image>
+    <view bindtap="into_index"></view>
+  </view>
+  
+</view>

@@ -1,0 +1,16 @@
+/* pages/game/index.wxss */
+.bg{
+  position: relative;
+  width: 100%;
+}
+.bg image{
+  width: 100%;
+}
+.bg-link {
+  position: absolute;
+  width: 480rpx;
+  height: 125rpx;
+  left: 50%;
+  bottom: 299rpx;
+  transform: translate(-50%,0);
+}

@@ -1,0 +1,43 @@
+<!--pages/game/game.wxml-->
+<view class='container'>
+  <view class="zhezhao" style="display: {{zhezhao}};" bindtap="close_win" catchtouchmove="true">
+    <image src='../../images/game{{name}}.png' mode="widthFix" class='lr-game-img'></image>
+  </view>
+  <view class="zhezhao-show" style="display: {{zhezhao_show}};"bindtap="close_result" catchtouchmove="true">
+    <view class="">
+      <image src='../../images/show1.png' mode="widthFix" class='lr-show-img'></image>
+      <view class="result-list">
+        <image src='../../images/show2.png' mode="widthFix" class='lr-show-img'></image>
+        <image src='../../images/show2.png' mode="widthFix" class='lr-show-img'></image>
+        <view class="result-all">
+          <view class="result-item" wx:for="{{result_list}}">
+            <span class="result-name">{{item.result}}</span><span>{{item.word}}</span>
+          </view>
+        </view>
+      </view>
+        <image src='../../images/show3.png' mode="widthFix" class='lr-show-img'></image>
+    </view>
+  </view>
+  <image src='../../images/01.jpg' mode="widthFix" class='lr-img'></image>
+  <view class='game-area'>
+    <image src='../../images/02.jpg' mode="widthFix" class='lr-img zhongqiu-bg'></image>
+    <view class='wan'>
+      <image src='{{image_1}}' class='img-1 {{move_1}}'></image>
+      <image src='{{image_2}}' class='img-2 {{move_2}}'></image>
+      <image src='{{image_3}}' class='img-3 {{move_3}}'></image>
+      <image src='{{image_4}}' class='img-4 {{move_4}}'></image>
+      <image src='{{image_5}}' class='img-5 {{move_5}}'></image>
+      <image src='{{image_6}}' class='img-6 {{move_6}}'></image>
+    </view>
+  </view>
+  <view class='game-start'>
+    <image src='../../images/03.jpg' mode="widthFix" class='lr-img zhongqiu-bg'></image>
+    <view class='button-area'>
+      <view class='game-share'>
+        <button class="start-button play-btn"  disabled="{{play_btn}}" bindtap='gameSucstar'></button>
+      </view>
+    </view>
+    <view class="into_rules" bindtap="into_rules"></view>
+    <view class="show_result" bindtap="show_result"></view>
+  </view>
+</view>
